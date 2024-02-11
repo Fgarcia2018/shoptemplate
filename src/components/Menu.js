@@ -1,5 +1,13 @@
 import React from "react";
-export const Menu=({services})=>{
+import { ShopContext } from "../Context";
+
+export const Menu=()=>{
+    const{
+        // showMenu,
+        // setShowmenu,
+        services,
+    }=React.useContext(ShopContext)
+
    return(
     <aside className="App-menu">
         <ul>
@@ -15,10 +23,10 @@ export const Menu=({services})=>{
                 </ul>              
             </li>            
             <li>
-                <a href="/" className="App-menu-option">Sobre nosotros</a>
+                <a href="#container-aboutUs" className="App-menu-option">Sobre nosotros</a>
             </li>
             <li>
-                <a href="/" className="App-menu-option">Contactanos</a>
+                <a href="#container-contact" className="App-menu-option">Contactanos</a>
             </li>
 
         </ul>

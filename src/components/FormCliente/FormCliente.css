@@ -1,0 +1,39 @@
+.form-cliente{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+}
+.form-cliente input{
+    margin-top: 10px;   
+    height: 30px;
+    width: 100%;
+}
+
+.form-cliente input:focus{
+    outline-color: #7D0A0A;
+}
+
+.form-cliente h3{
+    margin: 2px;
+}
+.form-cliente-date_time{
+   display:grid;
+  grid-template-areas: 
+  "label input"
+  "label input";
+  justify-items: center;
+   align-items: center;
+   width: 100%; 
+   margin-top: 2px;  
+   
+} 
+.form-cliente-date_time input{
+    width: 60%;
+    grid-area: "input";
+}  
+
+

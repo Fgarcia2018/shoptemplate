@@ -1,0 +1,42 @@
+.container-service{   
+    width: 100vw;
+    height:70vh;
+    color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;   
+}
+
+.container-service h3{
+    text-align: left;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-left: 5px;
+}
+
+.service-button{
+    display: flex;
+}
+.container-service button{ 
+    background-color:#7D0A0A ;
+    color: white;
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-left: 5px;
+}
+
+.container-service button:hover{
+    cursor: pointer;
+}
+
+
+
+@media (min-width:600px){
+    .container-service{
+        width: 30vw;
+        height: 70vh;
+        gap: 10px; 
+
+    }
+  }
