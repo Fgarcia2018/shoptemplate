@@ -13,8 +13,8 @@ export const Card=()=>{
        <>
           <div className="Card">
               <h3>Tu Servicio</h3>            
-              <spam>{serviceselected[0].nameService}</spam>     
-              <spam>Valor a pagar: ${formatCurrency(serviceselected[0].priceService)}</spam>
+              <h5>{serviceselected[0].nameService}<br/>
+              Valor a pagar: ${formatCurrency(serviceselected[0].priceService)}</h5>
           </div>    
        </>
     )

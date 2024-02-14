@@ -19,6 +19,9 @@
 .App h1{
   color: #7D0A0A;
 }
+.notFound h1{
+  color:#7D0A0A
+}
 .hide{
   display: none;
 }
@@ -69,7 +72,7 @@
 }
 
 .App-main { 
-  min-height: auto;
+  /* min-height: auto; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -97,11 +100,11 @@
   "service4"
   "service5"
   "service6"; 
-  padding-bottom: 5px;
+  padding-bottom: 40px;
   width: 100vw;
   place-content: center;
-  gap: 10px;
-
+  color: white;
+  gap: 5px;
 }
 
 .servicios-title{ 
@@ -169,7 +172,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 10px;
   color: white;
 }
 
@@ -186,15 +189,26 @@
   }
 }
 
-@media (min-width:600px){
+@media (min-width:700px){
+  .servicios{
+    grid-template-areas: 
+    "title title"
+    "service1 service2"
+    "service3 service4"
+     "service5 service6"; 
+  } 
+  .App-footer{
+    font-size: 16px;
+  }
+}
+@media (min-width:900px){
   .servicios{
     grid-template-areas: 
     "title title title"
     "service1 service2 service3"
     "service4 service5 service6"; 
-  }
-  /* .servicios h1{
-    grid-area: 'title';
-  } */
+   
+  } 
   
 }
+

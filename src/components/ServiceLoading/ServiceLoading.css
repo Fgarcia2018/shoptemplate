@@ -1,24 +1,47 @@
 .container-service-loading{
+   width: 100vw;
+   height: 70vh;    
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: center;
+   margin: auto;
 }
-.container-service-loading div{
+.container-service-loading-detail{
     width: 100%;
-    height: 200px;
-    align-self: center;
+    display: flex;
 }
-.container-service-loading h3,.container-service-loading button{
-    width: 50%;
-    height: 30px;   
-    align-self: center;
+.container-service-loading-detail button{
+    height: 40px;
+    width: 100px;
+    margin: 2vw;
     border: none;
 }
-.container-service-loading div,.container-service-loading h3,.container-service-loading button{
-    background:linear-gradient(90deg, rgba(250,250,250,1),rgb(200,199,199));
+.container-service-loading-detail div{
+    width: 20vw;
+    height: 5vh;
+}
+
+.container-service-loading,.container-service-loading-detail,.container-service-loading-detail button, .container-service-loading-detail h3 {
+    background:linear-gradient(90deg, rgba(250,250,250,1),rgb(106, 105, 105));
     background-size: 400% 400%;
     animation: loadingAnimation 3s ease-in-out infinite;
+}
+
+@media (min-width:700px){
+    .container-service-loading{
+        width: 50vw;
+        height: 70vh;
+    }
+    
+}
+
+@media (min-width:900px){
+    .container-service-loading{
+        width: 30vw;
+        height: 70vh;
+    }
+    
 }
 @keyframes loadingAnimation {
     0% {

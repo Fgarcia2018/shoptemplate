@@ -4,14 +4,33 @@ import './ServiceLoading.css';
 export const ServiceLoading=()=>{
     return (
         <>
-            <div className="container-service-loading">
-                <h3> </h3>
-                <div>
-                   
+            <figure className="container-service-loading">                
+                <div >
                 </div>
-                <h3> </h3>                             
-                <button></button>   
-            </div> 
+                <figcaption className="container-service-loading-detail">
+                    <div> </div>
+                    <div> </div>                             
+                    <button></button>   
+                </figcaption>
+            </figure> 
+            <figure className="container-service-loading">                
+                <div >
+                </div>
+                <figcaption className="container-service-loading-detail">
+                    <div> </div>
+                    <div> </div>                             
+                    <button></button>   
+                </figcaption>
+            </figure> 
+            <figure className="container-service-loading">                
+                <div >
+                </div>
+                <figcaption className="container-service-loading-detail">
+                    <div> </div>
+                    <div> </div>                             
+                    <button></button>   
+                </figcaption>
+            </figure> 
         </>
 
     )

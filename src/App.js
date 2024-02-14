@@ -1,30 +1,23 @@
-import { BrowserRouter, useRoutes } from 'react-router-dom';
+import { HashRouter, Route, Routes} from 'react-router-dom';
 import './App.css';
 import { Home } from './Pages/Home';
 import {Reserve} from './Pages/Reserve';
-import { ReserveConfirmed } from './Pages/ReserveConfirmed';
 import { ShopProvider } from './Context';
-
-
-export const AppRoutes=()=>{
-  let routes=useRoutes([
-    {path:'/Home', element: <Home/>},   
-    {path:'/',element: <Home/>},    
-    {path:'/Reserva',element: <Reserve/>},
-    {path:'/ConfirmacionReserva',element:<ReserveConfirmed/>}      
-    // {path:'/*',element: <NotFound/>},
-  ])
-  return routes;
-}
+import { NotFound } from './Pages/NotFound';
 
 function App() { 
 
   return (
 
     <ShopProvider>
-        <BrowserRouter>
-           <AppRoutes/>
-        </BrowserRouter>      
+        <HashRouter>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/Home' element={<Home />}/>
+            <Route path='/Reserva' element={<Reserve />}/>       
+            <Route path='*' element={<NotFound />}/>            
+          </Routes>
+        </HashRouter>      
     </ShopProvider>
   );
 }

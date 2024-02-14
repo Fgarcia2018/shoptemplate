@@ -20,7 +20,8 @@ export const ReserveConfirmed=()=>{
         setShowMessage(true);
         setTimeout(()=>{
             setShowMessage(false);            
-            document.location.pathname='/';
+          document.location.hash='/'
+            
         },3000);
     }
     return (
@@ -32,7 +33,7 @@ export const ReserveConfirmed=()=>{
                         addReserve();
                         closeModal();
                         Message();
-                        }} >Confirmar Servicio
+                        }} >Confirmar
                         </button>
                         <button onClick={closeModal}>Cancelar</button> 
                     </div>  
